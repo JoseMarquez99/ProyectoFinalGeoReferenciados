@@ -91,7 +91,7 @@ header .navigation li a{
 .content .textBox a{
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 10px 10px 10px;
+    padding: 3px 10px 10px 10px;
     background: #E5A65E;
     color: #000;
     border-radius: 40px;
