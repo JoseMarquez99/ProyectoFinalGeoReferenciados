@@ -63,47 +63,95 @@ header .navigation li a{
     margin-left: 40px;
 }
 
-.content{
+/*CARDS*/
+.card{
     position: relative;
-    width: 100%;
+    width: 600px;
+    height: 350px;
+    background: transparent;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    border-color: transparent;
 }
-
-.content .textBox{
+.card .circle2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card .circle2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.card:hover .circle2:before{
+    background: #0065c3;
+    clip-path: circle(400px at center);
+}
+.card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card:hover img{
+    left: 72%;
+    height: 500px;
+}
+.card .contentCard{
     position: relative;
-    max-width: 600px;
-    margin-right: 20px;
+    width: 90%;
+    left: 20%;
+    padding: 20px 300px 20px 0px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
 }
-
-.content .textBox h2{
+.card:hover .contentCard{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card .contentCard h2{
     color: #fff;
-    font-size: 3em;
-    margin-bottom: 10px;
-    line-height: 1.4em;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.card .contentCard p{
+    color: #fff;
+    justify-content:left;
+}
+.card .contentCard a{
+    position: relative;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
     font-weight: 700;
 }
 
-.content .textBox p{
-    color: #fff;
-}
-
-.content .textBox a{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 3px 10px 10px 10px;
-    background: #222;
-    color: #000;
-    border-radius: 40px;
-    font-weight: 1000;
-    letter-spacing: 1px;
-    text-decoration: none;
-    width: 90px;
-    height: 30px;
-    text-align: center;
-}
-
+/*CARDS*/
 .sci{
     position: absolute;
     bottom: 40px;
@@ -198,5 +246,31 @@ header .navigation li a{
         background-repeat: no repeat;
         background-position: center;
     }
+    /*CARDS*/
+    .card{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .card:hover{
+        height: 600px;
+    }
+    .card .contentCard{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .card:hover img{
+        top: 70%;
+        left:50%;
+        height: 300px;
+    }
 
+}
+
+@media (max-width: 420px){
+    .card .contentCard{
+        padding: 20px;
+    }
 }
