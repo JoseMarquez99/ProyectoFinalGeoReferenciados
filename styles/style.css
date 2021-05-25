@@ -211,13 +211,13 @@ header .navigation li a{
     header .navigation li a{
         margin: 10px 0;
         font-size: 1.5em;
-        font-weight: 300;
+        font-weight: 1000;
     }
     .toggle{
         position: relative;
         width: 30px;
         height: 30px;
-        background: url(./imagenes/menu.png);
+        background: url(../imagenes/menu.png);
         background-size: 30px;
         background-repeat: no repeat;
         background-position: center;
@@ -227,7 +227,7 @@ header .navigation li a{
     .toggle.active{
         position: fixed;
         right:40px;
-        background: url(./imagenes/close.png);
+        background: url(../imagenes/close.png);
         background-size: 25px;
         background-repeat: no repeat;
         background-position: center;
