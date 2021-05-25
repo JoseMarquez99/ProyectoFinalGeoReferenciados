@@ -26,7 +26,7 @@ section .circle{
     height: 100%;
     background: #E5A65E;
     /*clip-path: circle(70% at right -20%);*/
-    clip-path: circle(70% at right -20%);
+    clip-path: circle(60% at right -20%);
 }
 
 header{
@@ -150,11 +150,16 @@ header .navigation li a{
     text-decoration: none;
     font-weight: 700;
 }
-
 /*CARDS*/
+
+/*CARRUSEL*/
+.carrusel{
+    display: inline-block;
+}
+/*CARRUSEL*/
 .sci{
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     left: 100px;
     display:flex;
     justify-content: center;

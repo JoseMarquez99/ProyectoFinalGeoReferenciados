@@ -105,7 +105,7 @@ header .navigation li a{
 
 .sci{
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     left: 100px;
     display:flex;
     justify-content: center;
