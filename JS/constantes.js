@@ -1,1 +1,1 @@
-const formulario = document.querySelector("#nombre") && document.querySelector("#precio");
+//naaa
