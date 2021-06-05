@@ -310,6 +310,7 @@ header .navigation li a{
     background-image: none;
 }
 
+/*RESPONSIVIDAD*/
 @media (max-width: 991px){
     header{
        padding: 40px;
