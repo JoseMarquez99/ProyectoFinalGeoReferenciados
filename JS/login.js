@@ -1,8 +1,6 @@
 const loginForm = document.getElementById('loginForm');
 let isBusy = false;
 
-
-
 loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (isBusy == false) {
